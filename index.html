@@ -1,180 +1,70 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>お店のタイトル</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-    header, footer {
-      border-bottom: 1px solid #000;
-      padding: 10px 20px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin-left: 15px;
-      text-decoration: none;
-      color: #000;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .box {
-      border: 1px solid #000;
-      padding: 20px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .image-box {
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid #000;
-      text-decoration: none;
-      color: #000;
-    }
-    /* menu */
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-    .menu-item {
-      text-align: center;
-    }
-    .menu-item .image-box {
-      height: 150px;
-    }
-    /* about */
-    .info-box {
-      max-width: 400px;
-      margin: 0 auto 30px;
-    }
-    .map {
-      height: 300px;
-    }
-    footer {
-      border-top: 1px solid #000;
-      text-align: center;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      .menu-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
 <body>
 
-<header>
-  <div><a href="#about">心潤彩</a></div>
-  <nav>
-    <a href="#top">Top</a>
-    <a href="#menu">Menu</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<!-- Top -->
-<section id="top">
-  <div class="container">
-    <div class="box">心潤彩（しんじゅんさい）</div>
-    <div class="box image-box"><img src="a.jpg" alt="心潤彩 外観" style="max-width:100%; max-height:100%;"></div>
-    <div class="box">心潤彩は、旬の野菜や果物を中心に、お弁当やお惣菜を販売している地域密着型のお店です。新鮮さと手作りにこだわり、毎日安心して食べられる商品を提供しています。</div>
-    <div style="text-align:center;">
-      <a href="#menu" class="button">Menuボタン</a>
-    </div>
-  </div>
-</section>
-
-<!-- Menu -->
-<section id="menu">
-  <div class="container">
-    <div class="box">メニュー</div>
-
-    <div class="menu-grid">
-      <div class="menu-item">
-        <div class="box image-box"><img src="ダウンロード.jpg" alt="お弁当" style="max-width:100%; max-height:100%;"></div>
-        <div>日替わり弁当<br><small>栄養バランスを考えた手作り弁当で、特に人気の商品です。</small></div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-    </div>
-
-    <div class="box">セットメニュー</div>
-
-    <div class="menu-grid">
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-      <div class="menu-item">
-        <div class="box image-box">料理の画像</div>
-        <div>料理名</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <div class="box">お店の情報</div>
-
-    <div class="box info-box">
-      <p><strong>住所：</strong>〇〇県〇〇市〇〇町</p>
-      <p><strong>電話：</strong>000-0000-0000</p>
-      <p><strong>営業時間：</strong>10:00〜19:00</p>
-      <p><strong>定休日：</strong>日曜日</p>
-    </div>
-
-    <div class="box map">最寄り駅から徒歩約5分の場所にあり、通勤や買い物の途中でも立ち寄りやすい立地です。<br>（ここにGoogle Mapを貼り付け）</div>
-    <div class="box">駐車場情報</div>
-  </div>
-</section>
-
-<footer>
-  フッター情報
-</footer>
-
-</body>
-</html>
+    <!-- ① ファーストビュー：お店の世界観 -->
+    <header>
+      <h1>心潤彩</h1>
+      <p>旬の恵みを、身近に感じられるお店</p>
+    </header>
+  
+    <!-- ② お店紹介：なぜこのお店なのか -->
+    <main>
+  
+      <section id="about-shop">
+        <h2>心潤彩について</h2>
+  
+        <figure>
+          <img src="a.jpg" alt="心潤彩の外観">
+          <figcaption>地域に根付いたお店の外観</figcaption>
+        </figure>
+  
+        <p>
+          心潤彩は、野菜や果物、お弁当やお惣菜を中心に販売しているお店です。
+          日常の中で立ち寄りやすく、食を身近に感じられる点が特徴だと感じました。
+        </p>
+      </section>
+  
+      <!-- ③ メニュー紹介：お店の個性 -->
+      <section id="menu">
+        <h2>商品紹介</h2>
+  
+        <article class="menu-item">
+          <img src="ダウンロード.jpg" alt="日替わり弁当">
+          <h3>日替わり弁当</h3>
+          <p>
+            彩りがよく、栄養バランスも考えられていると感じた商品です。
+          </p>
+        </article>
+  
+        <article class="menu-item">
+          <img src="ダウンロード (1).jpg" alt="果物">
+          <h3>季節の果物</h3>
+          <p>
+            旬の食材が並び、季節感を感じられる点が印象的でした。
+          </p>
+        </article>
+      </section>
+  
+      <!-- ④ アクセス：生活とのつながり -->
+      <section id="access">
+        <h2>お店の場所</h2>
+  
+        <p>
+          住宅街の中にあり、普段の生活の中で利用しやすい場所にあります。
+        </p>
+  
+        <div class="map">
+          地図表示エリア
+        </div>
+      </section>
+  
+    </main>
+  
+    <!-- ⑤ まとめ -->
+    <footer>
+      <p>
+        地域に寄り添ったお店として、身近な存在だと感じました。
+      </p>
+    </footer>
+  
+  </body>
+  

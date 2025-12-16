@@ -1,119 +1,119 @@
-/* 全体設定 */
+/* ===== 全体 ===== */
 body {
     margin: 0;
     font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-    line-height: 1.8;
-    color: #000;
-    background-color: #fff;
+    line-height: 1.9;
+    color: #333;
+    background-color: #f7f7f5;
   }
   
-  /* ヘッダー */
+  /* ===== ファーストビュー ===== */
   header {
-    border-bottom: 1px solid #000;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 80px 20px 60px;
+    text-align: center;
+    background: #ffffff;
   }
   
-  header a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+  header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 0.1em;
   }
   
-  nav a {
-    margin-left: 15px;
+  header p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #666;
   }
   
-  /* セクション共通 */
-  section {
+  /* ===== 共通セクション ===== */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 40px 20px;
   }
   
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
+  section {
+    margin-bottom: 100px;
   }
   
-  /* 枠デザイン */
-  .box {
-    border: 1px solid #000;
-    padding: 20px;
+  section h2 {
+    font-size: 1.8rem;
     margin-bottom: 30px;
-    text-align: center;
+    position: relative;
   }
   
-  /* 画像エリア */
-  .image-box {
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  /* ボタン */
-  .button {
-    display: inline-block;
-    padding: 10px 25px;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
+  /* 見出しのオリジナル装飾 */
+  section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #6b8e23;
     margin-top: 10px;
   }
   
-  .button:hover {
-    background-color: #f0f0f0;
+  /* ===== お店紹介 ===== */
+  figure {
+    margin: 0 0 30px;
   }
   
-  /* メニュー */
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  figure img {
+    width: 100%;
+    border-radius: 8px;
   }
   
+  figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+  }
+  
+  /* ===== メニュー ===== */
   .menu-item {
-    text-align: center;
+    margin-bottom: 60px;
   }
   
-  .menu-item small {
-    display: block;
-    margin-top: 5px;
-    font-size: 0.9em;
+  .menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
   }
   
-  /* 店舗情報 */
-  .info-box {
-    max-width: 400px;
-    margin: 0 auto 30px;
-    text-align: left;
+  .menu-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
   }
   
-  /* マップ */
+  /* ===== アクセス ===== */
   .map {
-    height: 300px;
-    line-height: 1.6;
+    margin-top: 20px;
+    height: 260px;
+    border: 2px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
   }
   
-  /* フッター */
+  /* ===== フッター ===== */
   footer {
-    border-top: 1px solid #000;
+    background-color: #ffffff;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: #555;
   }
   
-  /* スマホ対応 */
+  /* ===== スマホ対応 ===== */
   @media (max-width: 768px) {
-    .menu-grid {
-      grid-template-columns: 1fr;
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
     }
   }
   
