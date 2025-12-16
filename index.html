@@ -1,70 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>心潤彩｜アルバイト先のお店紹介</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.8;
+      margin: 40px;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .photo-box, .map-box {
+      border: 1px solid #000;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
 <body>
 
-    <!-- ① ファーストビュー：お店の世界観 -->
-    <header>
-      <h1>心潤彩</h1>
-      <p>旬の恵みを、身近に感じられるお店</p>
-    </header>
-  
-    <!-- ② お店紹介：なぜこのお店なのか -->
-    <main>
-  
-      <section id="about-shop">
-        <h2>心潤彩について</h2>
-  
-        <figure>
-          <img src="a.jpg" alt="心潤彩の外観">
-          <figcaption>地域に根付いたお店の外観</figcaption>
-        </figure>
-  
-        <p>
-          心潤彩は、野菜や果物、お弁当やお惣菜を中心に販売しているお店です。
-          日常の中で立ち寄りやすく、食を身近に感じられる点が特徴だと感じました。
-        </p>
-      </section>
-  
-      <!-- ③ メニュー紹介：お店の個性 -->
-      <section id="menu">
-        <h2>商品紹介</h2>
-  
-        <article class="menu-item">
-          <img src="ダウンロード.jpg" alt="日替わり弁当">
-          <h3>日替わり弁当</h3>
-          <p>
-            彩りがよく、栄養バランスも考えられていると感じた商品です。
-          </p>
-        </article>
-  
-        <article class="menu-item">
-          <img src="ダウンロード (1).jpg" alt="果物">
-          <h3>季節の果物</h3>
-          <p>
-            旬の食材が並び、季節感を感じられる点が印象的でした。
-          </p>
-        </article>
-      </section>
-  
-      <!-- ④ アクセス：生活とのつながり -->
-      <section id="access">
-        <h2>お店の場所</h2>
-  
-        <p>
-          住宅街の中にあり、普段の生活の中で利用しやすい場所にあります。
-        </p>
-  
-        <div class="map">
-          地図表示エリア
-        </div>
-      </section>
-  
-    </main>
-  
-    <!-- ⑤ まとめ -->
-    <footer>
-      <p>
-        地域に寄り添ったお店として、身近な存在だと感じました。
-      </p>
-    </footer>
-  
-  </body>
-  
+<!-- 店名クリックでアクセスへ -->
+<h1><a href="#access">心潤彩</a></h1>
+
+<section>
+  <h2>1.お店の紹介</h2>
+  <p><strong>■ 店名・キャッチコピー</strong><br>
+    心潤彩（しんじゅんさい）</p>
+
+  <p><strong>■ お店のコンセプト</strong><br>
+    （ここに記入）</p>
+
+  <p><strong>■ 開業の背景やこだわり</strong><br>
+    （ここに記入）</p>
+
+  <p><strong>■ 店内の雰囲気・写真</strong></p>
+  <div class="photo-box">写真貼り付け欄</div>
+</section>
+
+<section>
+  <h2>2.メニュー</h2>
+  <table>
+    <tr>
+      <th>メニュー名</th>
+      <th>価格</th>
+      <th>おすすめポイント</th>
+    </tr>
+    <tr>
+      <td>（記入）</td>
+      <td>（記入）</td>
+      <td>（記入）</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ジャンプ先 -->
+<section id="access">
+  <h2>3.アクセス</h2>
+  <p><strong>住所：</strong>〇〇県〇〇市〇〇町</p>
+  <p><strong>電話番号：</strong>000-0000-0000</p>
+  <p><strong>営業時間：</strong>00:00〜00:00</p>
+
+  <div class="map-box">地図貼り付け欄</div>
+</section>
+
+</body>
+</html>
